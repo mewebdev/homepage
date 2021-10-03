@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styles from '../styles/layout.module.scss'
 import Header from "./header"
 import Footer from "./footer"
 
@@ -18,13 +19,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div>
-        <main>{children}</main>
-      </div>
-      <Footer/>
-    </>
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      </header>
+      <main className={styles.body}>
+        {children}
+      </main>
+      <footer className={styles.footer}>
+        <Footer/>
+      </footer>
+    </div>
   )
 }
 

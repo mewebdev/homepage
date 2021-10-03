@@ -1,0 +1,47 @@
+@import './typography.css';
+.container {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    width: 5em;
+    z-index: 1;
+    .intl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        .lang {
+            font-family: 'New Edge';
+            text-decoration: none;
+            color: black;
+            margin-bottom: .5rem;
+            padding: 0 .2rem;
+            line-height: 1rem;
+        }
+        .lang-active {
+            border: .5px solid black;
+        }
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        transform: rotate(90deg);
+        list-style-type: none;
+        justify-content: space-around;
+        margin-top: 8rem;
+        .nav-item {
+            margin-bottom: 1.5rem;
+            margin-right: 1rem;
+            padding: .2rem .5rem;
+            border-radius: 1rem;
+            border: 1px dashed #707070;
+            text-decoration: none;
+            color: black;
+            font-family: 'Serifbabe Alpha';
+        }
+        .sidebar-active {
+            border: 1px solid black;
+            color: gray;
+        }
+    }
+}

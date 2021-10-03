@@ -1,0 +1,59 @@
+@import './typography.css';
+$gray: #707070;
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .bg {
+        position: absolute;
+        z-index: -1;
+        top: 8rem;
+        left: 1rem;
+        font-family: 'Serifbabe Alpha';
+        font-size: 270px;
+        color: white;
+        opacity: .51;
+        text-shadow: -1px -1px 0 $gray, 1px -1px 0 $gray, -1px 1px 0 $gray, 1px 1px 0 $gray;
+    }
+    .text {
+        width: 90vw;
+        margin: 18rem auto 0 auto;
+        .paragraph {
+            font-family: "New Edge";
+            font-size: 2rem;
+            line-height: 2.7rem;
+            margin-bottom: 2rem;
+            #me {
+                display: none;
+            }
+            .box {
+                border: 1px solid black;
+                padding: .2rem;
+            }
+            .bent-box {
+                padding: .2rem;
+                background-image: url('../images/border.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        .bg {
+            font-size: 450px;
+            top: 10rem;
+        }
+        .text {
+            max-width: 500px;
+            .paragraph {
+                #me {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
