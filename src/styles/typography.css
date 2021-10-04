@@ -7,3 +7,13 @@
     font-family: 'New Edge';
     src: url('../fonts/NewEdgeTM-Regular.woff')
 }
+
+@font-face {
+    font-family: 'HKGrotesk Regular';
+    src: url('../fonts/hkgrotesk-regular.woff')
+}
+
+@font-face {
+    font-family: 'HKGrotesk Light';
+    src: url('../fonts/hkgrotesk-light.woff')
+}

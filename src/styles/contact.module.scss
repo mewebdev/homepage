@@ -1,0 +1,76 @@
+@import './typography.css';
+$gray: #707070;
+.container {
+    .arrow {
+        padding: 1rem;
+        width: 5rem;
+        margin-bottom: -2rem;
+    }
+    .star {
+        display: none;
+    }
+    .top {
+        padding: 1rem;
+        .title {
+            font-family: 'Serifbabe Alpha';
+            font-size: 120px;
+            line-height: 70px;
+            color: white;
+            text-shadow: -1px -1px 0 $gray, 1px -1px 0 $gray, -1px 1px 0 $gray, 1px 1px 0 $gray;
+        }
+        .blob {
+            display: none;
+        }
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        .guide {
+            font-family: 'New Edge';
+            font-size: 2rem;
+            margin: 2rem auto 0 auto;
+        }
+        .link {
+            margin: 0 auto;
+            .down-arrow {
+                transform: rotate(90deg);
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        position: relative;
+        .arrow {
+            display: none;
+        }
+        .star {
+            display: inline;
+            padding: 1rem;
+            width: 8rem;
+            margin-bottom: -3rem;
+            margin-left: 25%
+        }
+        .top {
+            display: flex;
+            align-items: top;
+            .title {
+                font-size: 210px;
+                line-height: 140px;
+                max-width: 50vw;
+                text-overflow: wrap;
+            }
+            .blob {
+                width: 300px;
+                height: 300px;
+                display: inline;
+            }
+        }
+        .bottom {
+            width: 50vw;
+            margin-left: 40%;
+        }
+    }
+}

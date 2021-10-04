@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import styles from '../styles/footer.module.scss';
 
-const Footer = ({ }) => (
-    <div>
-        Footer
+const Footer = () => (
+    <div className={styles.footer}>
+        &copy; O Ltd. 2021
     </div>
 )
 
