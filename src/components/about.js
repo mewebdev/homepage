@@ -4,18 +4,19 @@ import styles from '../styles/about.module.scss';
 import data from '../data/members.json';
 import mio from '../images/mio.jpg';
 import ken from '../images/ken.png';
+import title from '../images/WHOWEARE-image.png'
+import titleWeb from '../images/whoweare-web.png'
 
 const About = () => {
     return (
         <div className={styles.container} id="about">
-        <img className={styles.arrow} src={arrow} alt=""/>
+            <img className={styles.arrow} src={arrow} alt="Who We Are"/>
             <div className={styles.top}>
-                <h2 className={styles.title}>
-                WHO WE ARE
-                </h2>
+                <img src={title} id={styles.mobile}/>
+                <img src={titleWeb} id={styles.web}/>
             </div>
             <div className={styles.memberContainer}>
-                    <div className={styles.member}>
+                    <div className={styles.member} id={styles.ken}>
                         <h3 className={styles.name}>
                             {data[0].name}
                         </h3>

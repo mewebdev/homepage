@@ -3,6 +3,7 @@ $gray: #707070;
 .container {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
     .arrow {
         padding: 1rem;
         width: 5rem;
@@ -11,6 +12,14 @@ $gray: #707070;
     .top {
         display: flex;
         flex-direction: column;
+        width: 90vw;
+        z-index: -4;
+        #web {
+            display: none;
+        }
+        #mobile {
+            display: flex;
+        }
         .title {
             font-family: 'Serifbabe Alpha';
             font-size: 110px;
@@ -24,8 +33,10 @@ $gray: #707070;
     }
     .section-title {
         font-size: 1.8rem;
-        margin: 1rem auto;
+        line-height: 2rem;
+        margin: 1rem;
         font-family: 'New Edge';
+        max-width: 15rem;
     }
     .job-listings {
         width: 90vw;
@@ -62,6 +73,7 @@ $gray: #707070;
 
 @media only screen and (min-width: 600px) {
     .container {
+        margin-top: 5rem;
         .arrow {
             display: none;
         }
@@ -69,17 +81,21 @@ $gray: #707070;
             flex-direction: row;
             align-items: center;
             padding: 1rem;
-            .title {
-                font-size: 220px;
-                line-height: 140px;
-                max-width: 60vw;
+            #mobile {
+                display: none;
+            }
+            #web {
+                display: flex;
+                width: 100%;
+                max-width: 90vw;
             }
             .symbol {
                 display: block;
             }
         }
         .section-title {
-            margin-top: -3rem;
+            margin: -5rem auto 1rem auto;
+            max-width: 100%;
         }
         .job-listings {
             flex-direction: row;

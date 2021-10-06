@@ -4,21 +4,20 @@ $gray: #707070;
     .arrow {
         padding: 1rem;
         width: 5rem;
-        margin-bottom: -2rem;
+        margin-bottom: -3rem;
     }
     .top {
         padding: 1rem;
-        .title {
-            font-family: 'Serifbabe Alpha';
-            font-size: 110px;
-            line-height: 70px;
-            color: white;
-            text-shadow: -1px -1px 0 $gray, 1px -1px 0 $gray, -1px 1px 0 $gray, 1px 1px 0 $gray;
+        #web {
+            display: none;
+        }
+        #mobile {
+            display: flex;
         }
     }
     .member-container {
         width: 90vw;
-        margin: 2rem auto;
+        margin: 0 auto;
         .member {
             margin-bottom: 1rem;
             .name {
@@ -46,10 +45,13 @@ $gray: #707070;
             display: none;
         }
         .top {
-            .title {
-                font-size: 220px;
-                line-height: 140px;
-                max-width: 60vw;
+            #web {
+                display: flex;
+                max-width: 40vw;
+                margin-left: 5rem;
+            }
+            #mobile {
+                display: none;
             }
         }
         .member-container {
@@ -69,6 +71,9 @@ $gray: #707070;
                         max-width: 50%;
                     }
                 }
+            }
+            #ken {
+                transform: translate(-15%, 0);
             }
         }
     }

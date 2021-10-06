@@ -3,13 +3,15 @@ import styles from '../styles/jobs.module.scss';
 import data from '../data/job-listings.json';
 import symbol from '../images/symbol.png';
 import arrow from '../images/right-arrow.png';
-
+import title from '../images/WEAREHIR-ING-image.png';
+import titleWeb from '../images/hiring-web.png';
 const Jobs = () => {
     return (
         <div className={styles.container} id="career">
-            <img className={styles.arrow} src={arrow} alt=""/>
+            <img className={styles.arrow} src={arrow} alt="We Are Hiring"/>
             <div className={styles.top}>
-                <h1 className={styles.title}>WE ARE HIRING</h1>
+                <img src={title} className={styles.title} id={styles.mobile}/>
+                <img src={titleWeb} className={styles.title} id={styles.web}/>
                 <img className={styles.symbol} src={symbol} alt=""/>
             </div>
             <strong className={styles.sectionTitle}>Software Candidates</strong>
@@ -38,7 +40,7 @@ const Jobs = () => {
                                     ))}
                                 </ul>
                                 <strong className={styles.header}>
-                                    Necessary skills:
+                                    Desirable skills:
                                 </strong>
                                 <ul>
                                     {job.otherSkills.map((otherSkill, j)=>(

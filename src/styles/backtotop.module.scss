@@ -4,10 +4,7 @@
     flex-direction: column;
     .link {
         margin: 0 auto;
-        transform: translateX(10px);
         .down-arrow {
-            transform: rotate(-90deg);
-            width: 3rem;
             height: 6rem;
             margin: 0;
         }

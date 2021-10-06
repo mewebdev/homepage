@@ -1,16 +1,17 @@
 import * as React from "react";
 import styles from '../styles/backtotop.module.scss';
-import arrow from '../images/right-arrow.png';
+import arrow from '../images/up.png';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const BackToTop = () => {
     return (
         <div className={styles.container}>
-            <a href="/#top" className={styles.link}>
+            <AnchorLink to="/#top" className={styles.link}>
                     <img src={arrow} className={styles.downArrow} alt=""/>
-            </a>
-            <a href="/#top" className={styles.text}>
+            </AnchorLink>
+            <AnchorLink to="/#top" className={styles.text}>
                 Back To Top
-            </a>
+            </AnchorLink>
         </div>
     )
 }

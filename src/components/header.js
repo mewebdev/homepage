@@ -1,6 +1,7 @@
 import * as React from "react"
 import styles from '../styles/header.module.scss'
 import PropTypes from "prop-types"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
@@ -21,21 +22,22 @@ const Header = ({ siteTitle }) => (
       </Link>
     </ul>
     <ul className={styles.sidebar}>
-      <a href="/#about" 
+      <AnchorLink 
+        to="/#about" 
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         ABOUT
-      </a>
-      <a href="/#career" 
+      </AnchorLink>
+      <AnchorLink to="/#career" 
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         CAREER
-      </a>
-      <a href="/#contact" 
+      </AnchorLink>
+      <AnchorLink to="/#contact" 
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         CONTACT
-      </a>
+      </AnchorLink>
     </ul>
   </nav>
 )
