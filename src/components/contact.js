@@ -21,10 +21,10 @@ const Contact = () => {
                 <strong className={styles.guide}>
                     Click here
                 </strong>
-                <a href="mailto:ken@o-me.io" className={styles.link}>
+                <a href="mailto:info@o-me.io" className={styles.link}>
                     <img src={down} className={styles.downArrow} alt=""/>
                 </a>
-                <a href="mailto:ken@o-me.io" className={styles.link}>
+                <a href="mailto:info@o-me.io" className={styles.link}>
                     <img src={logo} id={styles.logo} alt=""/>
                 </a>
             </div>
