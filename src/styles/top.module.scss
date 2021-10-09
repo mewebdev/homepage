@@ -34,7 +34,7 @@ $gray: #707070;
                 padding: .2rem;
             }
             .bent-box {
-                padding: .2rem;
+                padding: .5rem;
                 background-image: url('../images/border.png');
                 background-position: center;
                 background-size: contain;
@@ -42,30 +42,28 @@ $gray: #707070;
             }
         }
         #flow {
-            background-image: url('../images/flow-blur.gif');
+            background-image: url('../images/spaceblur1.png');
             background-repeat: no-repeat;
             background-position: center;
-            backdrop-filter: blur(5px);
+            background-size: contain;
             display: flex;
             .image {
-                transform: scale(0.9);
-                filter: blur(0);
                 margin: 0 auto;
+                padding: 2rem;
             }
         }
         #space-container {
             margin-bottom: 2rem;
             position: relative;
             #space {
-                background-image: url('../images/space-blur.png');
+                background-image: url('../images/spaceblur2.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                backdrop-filter: blur(5px);
+                background-size: contain;
                 position: relative;
                 .image {
-                    transform: scale(0.9);
-                    filter: blur(0);
                     margin: 0 auto;
+                    padding: 2rem;
                 }
             }
             #cross {
@@ -95,30 +93,39 @@ $gray: #707070;
             }
         }
         .text {
-            max-width: 560px;
             position: relative;
-            margin: 18rem auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin-bottom: -15rem;
             .paragraph {
+                margin: 2rem auto;
+                max-width: 560px;
                 #me {
                     display: inline;
                 }
             }
             #space-container {
+                padding: 0;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: row-reverse;
-                justify-content: left;
-                transform: translate(-30%, 0%);
-                width: 70vw;
+                position: relative;
                 #space {
-                    width: 100%;
-                    margin-left: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    transform: translate(-10%, -10%);
+                    .image {
+                        margin: 0;
+                        padding: 4rem;
+                    }
                 }
                 #cross {
-                    display: flex;
-                    transform: translate(-30%, 10%);
+                    position: absolute;
+                    display: block;
+                    left: 60%;
                     height: 12rem;
+                    z-index: -5;
                 }
                 #snake {
                     display: none;
@@ -129,8 +136,8 @@ $gray: #707070;
             }
             div:nth-child(2) {
                 z-index: -2;
-                width: 60vw;
-                transform: translate(-10%, -40%);
+                height: 30rem;
+                transform: translate(10%, -50%);
                 order: 6
             }
             div:nth-child(3) {
