@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         to="/ja"
         activeClassName={styles.langActive} 
         className={styles.lang}>
-          JA
+          日本語
       </Link>
     </ul>
     <ul className={styles.sidebar}>

@@ -3,13 +3,15 @@
     position: fixed;
     top: 2rem;
     right: 1rem;
-    width: 5em;
     z-index: 1;
+    width: 8rem;
     .intl {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         list-style-type: none;
+        width: 6rem;
+        margin: 0 auto;
         .lang {
             font-family: 'New Edge';
             text-decoration: none;
@@ -28,7 +30,7 @@
         transform: rotate(90deg);
         list-style-type: none;
         justify-content: space-around;
-        margin-top: 8rem;
+        margin-top: 10rem;
         .nav-item {
             margin-bottom: 1.5rem;
             margin-right: 1rem;
