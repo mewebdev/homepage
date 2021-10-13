@@ -24,7 +24,7 @@ module.exports = {
         path: `${__dirname}/src/intl`,
         languages: [`en`, `ja`],
         defaultLanguage: `en`,
-        redirect: true,
+        redirect: true
       },
     },
   ],

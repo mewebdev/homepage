@@ -3,9 +3,12 @@ import * as styles from '../styles/header.module.scss'
 import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby"
+import { useIntl } from "gatsby-plugin-react-intl"
 
-const Header = ({ siteTitle }) => (
-  <nav className={styles.container}>
+export default function Header({ siteTitle }){
+  const intl = useIntl()
+  return(
+    <nav className={styles.container}>
     <ul className={styles.intl}>
       <Link 
         to="/"
@@ -23,24 +26,25 @@ const Header = ({ siteTitle }) => (
     </ul>
     <ul className={styles.sidebar}>
       <AnchorLink 
-        to="/#about" 
+        to={`/${intl.locale}/#about`}
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         ABOUT
       </AnchorLink>
-      <AnchorLink to="/#career" 
+      <AnchorLink to={`/${intl.locale}/#career`} 
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         CAREER
       </AnchorLink>
-      <AnchorLink to="/#contact" 
+      <AnchorLink to={`/${intl.locale}/#contact`}
         activeClassName={styles.sidebarActive} 
         className={styles.navItem}>
         CONTACT
       </AnchorLink>
     </ul>
   </nav>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -49,5 +53,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
