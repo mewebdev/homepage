@@ -29,18 +29,17 @@ export default function Top (){
                     </p>
                 </div>
                 <div id={styles.spaceContainer}>
-
-                <img src={snake} alt="" id={styles.snake}/>
-                    <div id={styles.space}>
-                        <img src={space} alt="SPACES IN ME" className={styles.image} />
+                    <img src={snake} alt="" id={styles.snake}/>
+                        <div id={styles.space}>
+                            <img src={space} alt="SPACES IN ME" className={styles.image} />
+                        </div>
+                        <img src={cross} alt="" id={styles.cross}/>
                     </div>
-                    <img src={cross} alt="" id={styles.cross}/>
-                </div>
-                <div>
-                    <p className={styles.paragraph}>
-                    {intl.formatMessage({id: 'intro_e'})} <span className={styles.bentBox}>{intl.formatMessage({id: 'word_e'})}</span>{intl.formatMessage({id: 'intro_f'})}
-                    </p>
-                </div>
+                    <div>
+                        <p className={styles.paragraph}>
+                        {intl.formatMessage({id: 'intro_e'})} <span className={styles.bentBox}>{intl.formatMessage({id: 'word_e'})}</span>{intl.formatMessage({id: 'intro_f'})}
+                        </p>
+                    </div>
             </section>
         </div>
     )
