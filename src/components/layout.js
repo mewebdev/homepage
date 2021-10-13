@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from '../styles/layout.module.scss'
+import * as styles from '../styles/layout.module.scss'
 import Header from "./header"
 import Footer from "./footer"
 
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
+      <header>
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       </header>
       <main className={styles.body}>

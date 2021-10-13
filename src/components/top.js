@@ -1,11 +1,11 @@
 import React from "react";
-import styles from '../styles/top.module.scss';
+import * as styles from '../styles/top.module.scss';
 import flow from '../images/spacegiflow.gif';
 import space from '../images/space.png';
 import cross from '../images/cross.png'
 import me from '../images/ME-image.png';
 import snake from '../images/sfc-deepfake-snake.png';
-import { useIntl, Link, FormattedMessage } from "gatsby-plugin-react-intl"
+import { useIntl } from "gatsby-plugin-react-intl"
 
 export default function Top (){
     const intl = useIntl()
@@ -17,7 +17,7 @@ export default function Top (){
             <section className={styles.text}>
                 <div>
                     <p className={styles.paragraph}>
-                        <span id={styles.me}>ME</span> {intl.formatMessage({id: 'intro_a'})} <span className={styles.box}>brainstorming</span>
+                        <span id={styles.me}>ME</span> {intl.formatMessage({id: 'intro_a'})} <span className={styles.box}> {intl.formatMessage({id: 'word_a'})}</span>{intl.formatMessage({id: 'intro_b'})}
                     </p>
                 </div>
                 <div id={styles.flow}>
@@ -25,7 +25,7 @@ export default function Top (){
                 </div>
                 <div>
                     <p className={styles.paragraph}>
-                        It is your very personal <span className={styles.box}>internet</span> collection and knowledge base that is with you forever—
+                    {intl.formatMessage({id: 'intro_c'})} <span className={styles.box}>{intl.formatMessage({id: 'word_c'})}</span> {intl.formatMessage({id: 'intro_d'})}
                     </p>
                 </div>
                 <div id={styles.spaceContainer}>
@@ -38,7 +38,7 @@ export default function Top (){
                 </div>
                 <div>
                     <p className={styles.paragraph}>
-                        it takes the flow of your thoughts somewhere <span className={styles.bentBox}>unexpected</span> leading to new discoveries and ideas.
+                    {intl.formatMessage({id: 'intro_e'})} <span className={styles.bentBox}>{intl.formatMessage({id: 'word_e'})}</span>{intl.formatMessage({id: 'intro_f'})}
                     </p>
                 </div>
             </section>

@@ -18,5 +18,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-react-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`en`, `ja`],
+        defaultLanguage: `en`,
+        redirect: true,
+      },
+    },
   ],
 }

@@ -1,5 +1,5 @@
 import * as React from "react"
-import styles from '../styles/header.module.scss'
+import * as styles from '../styles/header.module.scss'
 import PropTypes from "prop-types"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby"
