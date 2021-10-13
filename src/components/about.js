@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import arrow from '../images/right-arrow.png';
 import styles from '../styles/about.module.scss';
 import data from '../data/members.json';

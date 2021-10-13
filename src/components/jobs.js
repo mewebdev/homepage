@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styles from '../styles/jobs.module.scss';
 import data from '../data/job-listings.json';
 import symbol from '../images/symbol.png';

@@ -1,12 +1,14 @@
-import * as React from "react";
+import React from "react";
 import styles from '../styles/top.module.scss';
 import flow from '../images/spacegiflow.gif';
 import space from '../images/space.png';
 import cross from '../images/cross.png'
 import me from '../images/ME-image.png';
 import snake from '../images/sfc-deepfake-snake.png';
+import { useIntl, Link, FormattedMessage } from "gatsby-plugin-react-intl"
 
-const Top = () => {
+export default function Top (){
+    const intl = useIntl()
     return (
         <div className={styles.container} id="top">
             <div className={styles.bg}>
@@ -15,7 +17,7 @@ const Top = () => {
             <section className={styles.text}>
                 <div>
                     <p className={styles.paragraph}>
-                        <span id={styles.me}>ME</span> is a creative file system for <span className={styles.box}>brainstorming</span>
+                        <span id={styles.me}>ME</span> {intl.formatMessage({id: 'intro_a'})} <span className={styles.box}>brainstorming</span>
                     </p>
                 </div>
                 <div id={styles.flow}>
@@ -43,5 +45,3 @@ const Top = () => {
         </div>
     )
 }
-
-export default Top;

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import styles from '../styles/backtotop.module.scss';
 import arrow from '../images/up.png';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
