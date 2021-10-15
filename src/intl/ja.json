@@ -13,7 +13,7 @@
     "other_skill_title": "望ましいスキル:",
     "job_a_title": "バックエンドエンジニア",
     "job_a_description": "ProjectMEのバックエンド開発者。MEはあなただけのインターネットコレクションを作る、データ探索・保存ツール。あなたの思考の流れをそのままナレッジベースとして形にすることができる。データ同士をつなげることで新たなアイデアのひらめきへと導く。",
-    "job_a_skill_1": "リレーショナルデータベースとスケーラブルデザインシステムについて深い理解がある",
+    "job_a_skill_1": "AWS\/GCP\/Azure",
     "job_a_skill_2": "NodeJS\/ GO\/ Python\/ C++のいずれかの経験がある",
     "job_a_skill_3": "Relational databases \/ SQL \/ PostgreSQL \/ Redis\/MongoDb\/ Docker",
     "job_a_skill_4": "Docker",
